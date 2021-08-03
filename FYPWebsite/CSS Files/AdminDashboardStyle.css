@@ -1,0 +1,306 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.calendar {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    float: right;
+    margin-right: -10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    width: 42%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.weeks {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.weeks span {
+    padding: 15px;
+}
+
+.month-week h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.days {
+    display: flex;
+}
+
+.days span {
+    width: 10%;
+    padding-bottom: 16px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+
+.days span:not(.other-month)::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: #2E94E3;
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+
+.days span:not(.other-month):hover{
+    color: #fff;
+}
+
+.days span:not(.other-month):hover::before{
+    opacity: 1;
+    color: #fff;
+}
+
+.other-month {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.main-content {
+    position: relative;
+    margin-left: 240px;
+}
+
+main {
+    background: #9fa5ab;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+}
+
+.dash-title {
+    padding-bottom: 10px;
+    color: black;    
+}
+
+.dash-cards #customer {
+    float: left;
+    margin-left: 40px;
+}
+
+.dash-cards #application {
+    float: right;
+    margin-right: 300px;
+}
+
+.card-single {
+    background: #fff;
+    width: 30%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.card-body {
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-body span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1rem;
+}
+
+.card-body h5 {
+    color: #8390A2;
+    font-size: 1rem;
+}
+
+.card-body h4 {
+    font-size: 1.1rem;
+    margin-top: .2rem;
+}
+
+.recent {
+    margin-top: 100px;
+}
+
+.task-table {
+    float: left;
+    margin-left: 20px;
+}
+
+.summary-card {
+    background: #fff;
+    border-radius: 7px;
+    float: right;
+    margin-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 375px;
+}
+
+.summary-single {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.summary-single span {
+    font-size: 24px;
+    color: #777;
+    padding-right: 16px;
+}
+
+.summary-single h5 {
+    color: #2691d9;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.summary-single small {
+    color: #8390A2;
+    font-weight: 700;
+}
+
+.task-card {
+    background: #fff;
+    border-radius: 7px;
+    width: 520px;
+    height: 448px;
+}
+
+.task-card h3 {
+    color: #777;
+    padding: 16px;
+}
+
+.task-card table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 7px;
+}
+
+.task-card thead {
+    background: #dbd9d9;
+    text-align: center;
+}
+
+.task-card th, td {
+    font-size: 16px;
+    padding: 15px 16px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #efefef;
+}
+
+.badge-success {
+    background: #3ec400;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.badge-warning {
+    background: #f70202;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #3C3B3B;
+    color: #fff;
+    padding: 1rem;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    padding: 16px;
+    margin-left: 17px;
+    font-size: 20px;
+}
+
+.sidebar-menu {
+    padding: 1rem;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar-menu a:hover {
+    background: #19B3D3;
+}
+
+.sidebar li {
+    margin-bottom: 1.2rem;
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 7px;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.sidebar a span:last-child {
+    padding: .6rem;
+}
+
+.sidebar .send-btn {
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+#form .send-btn:hover{
+    background: #0582E3;
+}

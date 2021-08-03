@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    background: #9fa5ab;
+}
+
+.calendar {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 260px;
+    border-radius: 50px;
+    width: 78%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.5px;
+    height: 540px;
+}
+
+.weeks {
+    margin-bottom: 4px;
+    padding-top: 5px;
+}
+
+.weeks span {
+    padding: 53px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.month-week h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.days span {
+    width: 10%;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    margin-left: 26px;
+    margin-right: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+
+.days span:not(.other-month)::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #2E94E3;
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+
+.days span:not(.other-month):hover{
+    color: #fff;
+}
+
+.days span:not(.other-month):hover::before{
+    opacity: 1;
+    color: #fff;
+}
+
+.other-month {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.calendar .btn {
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 998.5px;
+    margin-left: .5px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+#form .btn:hover{
+    background: #0582E3;
+}

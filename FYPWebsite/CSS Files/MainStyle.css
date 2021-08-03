@@ -1,0 +1,293 @@
+body {
+    background-image: url(https://designproficient.com/blog/wp-content/uploads/2018/05/1500869489_tron_loop_by_heisenberg1234-d6ekuxs.gif);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.container {
+    font-family: monospace;
+}
+
+#MainPage {
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    background-color: #616161;
+    position: relative;
+}
+
+#MainPage .develop img {
+    position: absolute;
+    width: 26%;
+    right: 61%;
+}
+
+#MainPage .protect img {
+    position: absolute;
+    width: 18%;
+    top: 5%;
+    right: 40%;
+}
+
+#MainPage .secure img {
+    position: absolute;
+    width: 18%;
+    top: 5%;
+    right: 12.2%;
+}
+
+#MainPage .content {
+    font-family: monospace;
+    text-align: center;
+    transform: translate(0%, 110%);
+}
+
+#MainPage h2 {
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+#MainPage p {
+    font-size: 30px;
+}
+
+#OurStory {
+    height: 700px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    color: white;
+    background-color: #9E9E9E;
+}
+
+#OurStory h2 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin-left: 200px;
+    padding-top: 30px;
+}
+
+#OurStory p {
+    font-size: 25px;
+    transform: translate(0%, 80%);
+    text-align: center;
+    margin-left: -600px;
+}
+
+#OurStory img {
+    width: 550px;
+    position: absolute;
+    top: 233%;
+    right: 0%;
+}
+
+.contact-section {
+    height: 500px;
+    color: white;
+    background-color: #616161;
+    width: 100%;
+    display: flex;
+    float: bottom;
+    justify-content: center;
+    align-content: center;
+    padding-top: 250px;
+}
+
+.contact-section #info {
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 160px;
+    font-size: 25px;
+}
+
+.contact-section #info i {
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.contact-section #form {
+    font-size: 25px;
+    max-width: 700px;
+    margin-right: 40px;
+}
+
+#info, #form {
+    flex: 1;
+}
+
+#form textarea, .text-box {
+    font-family: "Calibri";
+    border: none;
+    width: calc(40% - 10px);
+    height: 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#form h2 {
+    text-align: center;
+    padding-right: 120px;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+
+#form textarea {
+    font-family: "Arial";
+    border: none;
+    width: 76.7%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 120px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#form .send-btn {
+    margin-left: 0px;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 462px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+#form .send-btn:hover{
+    background: #0582E3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7,0, 211, 1) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100vh black;
+}
+
+.wallpaper {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    animation: fade-inout 4s infinite alternate;
+}
+
+.wallpaper .text {
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wallpaper .text2 {
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wallpaper .text::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 130%;
+    left: 130%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, transparent 10%);
+    animation: animation 9s linear;
+}
+
+.wallpaper .text2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 130%;
+    left: 130%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, transparent 10%);
+    animation: animation 9s linear;
+}
+
+.success {
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66E;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.warning {
+    z-index: 1;
+    background: #fa7075;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid red;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+@keyframes animation {
+    0% {
+        left: -20%;
+    }
+    
+    50% {
+        left: 130%;
+    }
+    
+    100% {
+        left: -20%;
+    }
+}
+
+@keyframes fade-inout {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+

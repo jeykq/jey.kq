@@ -1,0 +1,61 @@
+.logo {
+    float: left;
+    width: 20%;
+}
+
+header {
+    background-image: linear-gradient(to top, #343435, #3C3B3B);
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+nav a:before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 500ms;
+}
+
+nav a:hover{
+    color: cyan;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding-right: 70px;
+    list-style: none;
+}
+
+nav li {
+    font-family: "Calibri";
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    position: relative;
+}
+

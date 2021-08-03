@@ -1,0 +1,38 @@
+body {
+    background: #9fa5ab;
+}
+
+.recordTable {
+    background: #fff;
+    border-collapse: collapse;
+    margin: 170px 280px;
+    font-size: 1rem;
+    width: 75%;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.recordTable thead tr {
+    background: #19B3D3;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.recordTable th,
+.recordTable td {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.recordtable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.recordtable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.recordTable tbody tr:last-of-type {
+    border-bottom: 30px solid #19B3D3;
+}
